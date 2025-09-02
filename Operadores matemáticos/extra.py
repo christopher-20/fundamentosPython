@@ -24,16 +24,120 @@
 # Peça 3 nomes e depois pergunte ao usuário um nome
 #  qualquer. Diga se esse nome está ou não na lista.
 
-lista = []
+# lista = []
 
-for i in range(5):
-    nomes = input("qual nome: ")
-    lista.append(nomes)
-    i += 1
+# for i in range(5):
+#     nomes = input("qual nome: ")
+#     lista.append(nomes)
+#     i += 1
 
-busca = input("buscar: ")
+# busca = input("buscar: ")
 
-if busca in lista:
-        print(f"{busca}: tem na lista")
+# if busca in lista:
+#         print(f"{busca}: tem na lista")
+# else:
+#         print(f"{busca}: Não tem na lista")
+
+# Peça 5 idades, guarde em uma lista e mostre qual é 
+# a maior e qual é a menor idade.
+# lista = []
+
+# for i in range(5):
+#     idade = int(input("qual idade: "))
+#     lista.append(idade)
+#     i += 1
+
+# print("maio idade: ", max(lista))
+# print("menor idade: ", min(lista56))
+
+# Cadastre 5 notas em uma lista, calcule a média e diga 
+# se o aluno foi aprovado (média ≥ 7) ou reprovado.
+# nota =[]
+
+# for i in range(5):
+#     valo = int(input("nota: "))
+#     nota.append(valo)
+#     i += 1
+
+# cal = (nota[0] + nota[1] + nota[2] +nota[3] + nota[4]) / 5
+
+# if cal >= 7.010:
+#     print(f"Voce foi aprovado nota: {cal}")
+# else:
+#     print(f"Voce foi reprovado media 7 sua nota: {cal}")
+
+
+# Peça 5 números, guarde em uma lista e mostre apenas
+#  aqueles que são maiores que 10.
+# lista = []
+
+# for i in range(5):
+#     numero = int(input("qual é numero: "))
+#     lista.append(numero)
+#     i += 1
+   
+
+# for numero in lista:
+#     if numero >= 10:
+#         print(f"O número {numero} é grande (>= 10)")
+#     else:
+#         print(f"O número {numero} é pequeno (< 10)")
+
+# Monte um cadastro de alunos: peça o nome e a nota de cada um,
+# guarde em listas e mostre quem ficou com a maior nota.
+
+# nomes = []
+# notas = []
+
+# for i in range(3):
+#     nome = input("qual é seu nome: ")
+#     nota = int(input("qual é seu nota: "))
+#     nomes.append(nome)
+#     notas.append(nota)
+    
+
+# maio_nota = max(notas)
+# posição = notas.index(maio_nota)
+# melhor_aluno = nomes[posição]
+# print(f"o aluno com maior nota: nome {melhor_aluno}, nota {maio_notaf}")
+
+
+# Crie um programa que peça nomes de pessoas até o usuário digitar
+# “sair”. Depois mostre todos os nomes digitados.
+
+# nomes = []
+
+# while True:
+#     nome = input("qual é seu nome: ")
+#     if nome.lower() == "sair":
+#         break
+#     nomes.append(nome)
+
+# print(f"nomes salvos: {nomes}")
+
+
+# Faça um sistema de login: peça o nome de usuário e senha,
+# verifique em listas pré-cadastradas se a combinação está 
+# correta e diga se o login foi bem-sucedido ou não
+
+nome = []
+senha = []
+
+for i in range(1):
+    Cnome = input("qual nome:")
+    Csenha = input("qual senha: ")
+
+    nome.append(Cnome)
+    senha.append(Csenha)
+
+usuario = input("nome: ")
+senha_digitada = input("senha: ")
+
+if usuario in nome:
+    indice = nome.index(usuario)
+    if senha_digitada == senha[indice]:
+        print("login ok")
+    else:
+        print("senha errada")
 else:
-        print(f"{busca}: Não tem na lista")
+    print("nome não existe")
